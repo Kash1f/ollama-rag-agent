@@ -22,7 +22,9 @@ chain = prompt | model # we are chaining the prompt with the model so that when 
 
 
 while True:
+    print("\n\n--------------------------------")
     question = input("Ask your question or press q to quit:")
+    print("\n\n")
     if question == "q":
         break
     result = chain.invoke({"reviews": [], "question": question})
